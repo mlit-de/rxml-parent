@@ -24,6 +24,12 @@
         </developer>
     </developers>
 
+    <properties>
+        <java.source.version>1.6</java.source.version>
+        <java.target.version>1.6</java.target.version>
+    </properties>
+
+
     <scm>
         <connection>scm:git:git@github.com:mlit-de/rxml-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mlit-de/rxml-parent.git</developerConnection>
@@ -37,38 +43,6 @@
                 <groupId>net.sf.saxon</groupId>
                 <artifactId>Saxon-HE</artifactId>
                 <version>9.6.0-4</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>3.11</version>
-            </dependency>
-
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>2.7</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.xmlgraphics</groupId>
-                <artifactId>fop</artifactId>
-                <version>1.1</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.apache.avalon.framework</groupId>
-                        <artifactId>avalon-framework-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.avalon.framework</groupId>
-                        <artifactId>avalon-framework-impl</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>xalan</groupId>
-                        <artifactId>xalan</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
@@ -145,7 +119,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>falseä</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
 
